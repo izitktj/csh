@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 
 #define CSH_READ_LINE_BUFSIZE 1024
@@ -17,7 +18,44 @@ struct user
 
 char* cshReadLine()
 {
+	int bufferSize = CSH_READ_LINE_BUFSIZE;
+	int index = 0;
+	char* lineBuffer = malloc(sizeof(char) * bufferSize);
+	int currentChar;
 	
+	if(!lineBuffer)
+	{
+		fprintf(stderr, "Error while allocating memory :(\n");
+		exit(EXIT_FAILURE);
+	}
+	
+	while(true)
+	{
+		currentChar = getchar();
+		
+		if(currentChar == '\n' || currentChar == EOF)
+		{
+			lineBuffer[index] = '\0';
+			return lineBuffer;
+		}else{
+			lineBuffer[index] = currentChar;
+		}
+		
+		index++;
+		
+		if(index >= bufferSize)
+		{
+			bufferSize += CSH_READ_LINE_BUFSIZE;
+			lineBuffer = realloc(lineBuffer, bufferSize);
+			
+			
+			if(!lineBuffer)
+			{
+				fprintf(stderr, "Error while allocating memory :(\n");
+				exit(EXIT_FAILURE);
+			}
+		}
+	}
 }
 
 struct err cshLoop(struct user usr)
@@ -43,10 +81,9 @@ struct user registrateUser()
 		{true, true, true}
 	};
 
-	printf("Lets create a user!");
+	/*printf("Lets create a user!");
 	printf("\nUser name: ");
-	scanf("%s", newUser.name);
-	printf("\n");
+	scanf("%s", newUser.name); */
 
 	return newUser;
 }
@@ -58,7 +95,7 @@ int main(int argc, char** argv)
 
 	if(error.errorCode != 0)
 	{
-		printf(error.errorText);
+		printf("%s", error.errorText);
 	}
 
 }
