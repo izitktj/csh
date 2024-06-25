@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Software\Cmake\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Software\Cmake\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Gustavo\Documents\projs\Csh
+CMAKE_SOURCE_DIR = C:\Users\etec\Documents\projs\csh
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Gustavo\Documents\projs\Csh\build
+CMAKE_BINARY_DIR = C:\Users\etec\Documents\projs\csh\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/CShell.dir/clean
 CMakeFiles/CShell.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CShell.dir\build.make CMakeFiles/CShell.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CShell.dir\build.make CMakeFiles/CShell.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Gustavo\Documents\projs\Csh\build\CMakeFiles --progress-num=1,2,3 "Built target CShell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\etec\Documents\projs\csh\build\CMakeFiles --progress-num=1,2,3 "Built target CShell"
 .PHONY : CMakeFiles/CShell.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CShell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gustavo\Documents\projs\Csh\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etec\Documents\projs\csh\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CShell.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Gustavo\Documents\projs\Csh\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etec\Documents\projs\csh\build\CMakeFiles 0
 .PHONY : CMakeFiles/CShell.dir/rule
 
 # Convenience name for target.

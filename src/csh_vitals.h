@@ -13,6 +13,17 @@ struct err
     char errorText[100];
 };
 
+struct args
+{
+	int argSize;
+	char** args;
+};
+
+/*
+    Parse arguments and return a char**
+*/
+struct args cshParseArguments(char* line);
+
 /*
     Main loop from CSH
 */

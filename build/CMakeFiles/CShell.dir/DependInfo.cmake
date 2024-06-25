@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Gustavo/Documents/projs/Csh/src/csh_vitals.c" "CMakeFiles/CShell.dir/src/csh_vitals.c.obj" "gcc" "CMakeFiles/CShell.dir/src/csh_vitals.c.obj.d"
-  "C:/Users/Gustavo/Documents/projs/Csh/src/main.c" "CMakeFiles/CShell.dir/src/main.c.obj" "gcc" "CMakeFiles/CShell.dir/src/main.c.obj.d"
+  "C:/Users/etec/Documents/projs/csh/src/csh_vitals.c" "CMakeFiles/CShell.dir/src/csh_vitals.c.obj" "gcc" "CMakeFiles/CShell.dir/src/csh_vitals.c.obj.d"
+  "C:/Users/etec/Documents/projs/csh/src/main.c" "CMakeFiles/CShell.dir/src/main.c.obj" "gcc" "CMakeFiles/CShell.dir/src/main.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
