@@ -1,1 +1,8 @@
+#Remove builds
 *.exe
+*.out
+
+#Cmake
+build/*
+!build/build.bat
+!build/run.bat

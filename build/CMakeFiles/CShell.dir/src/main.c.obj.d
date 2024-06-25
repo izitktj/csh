@@ -1,0 +1,25 @@
+CMakeFiles/CShell.dir/src/main.c.obj: \
+ C:\Users\Gustavo\Documents\projs\Csh\src\main.c \
+ C:\Users\Gustavo\Documents\projs\Csh\src\csh_vitals.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/stdio.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/corecrt.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/Software/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
+ C:/Software/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/limits.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/malloc.h \
+ C:/Software/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
+ C:/Software/w64devkit/x86_64-w64-mingw32/include/errno.h \
+ C:/Software/w64devkit/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdbool.h
