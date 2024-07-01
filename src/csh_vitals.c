@@ -1,5 +1,9 @@
+#include <sys/wait.h>
+
 #include <stdio.h>
+#include <unistd.h>
 #include <stdlib.h>
+
 #include <stdbool.h>
 #include <string.h>
 
@@ -25,6 +29,35 @@ void errorAloc()
 {
 	fprintf(stderr, "Error while allocating memory :(\n");
 	exit(EXIT_FAILURE);
+}
+
+void runProgram(char** arguments)
+{
+	pid_t pid, wpid;
+	int status;
+
+	pid = fork();
+	if (pid == 0)
+	{
+		if(execvp(arguments[0], arguments) == -1)
+		{
+			perror("csh");
+		}
+		printf("\nfinalizou!");
+		exit(EXIT_FAILURE);
+	}
+	else if(pid < 0)
+	{
+		exit(EXIT_FAILURE);
+		printf("\ndeu merda");
+	}
+	else
+	{
+		do
+		{
+			wpid = waitpid(pid, &status, WUNTRACED);
+		}while(!WIFEXITED(status) && !WIFSIGNALED(status));
+	}
 }
 
 struct args cshParseArguments(char* line)
@@ -123,6 +156,7 @@ struct err cshLoop()
 		line = cshReadLine();
 		lineArguments = cshParseArguments(line);
 		args = lineArguments.args;
+		runProgram(args);
 	}while(error.errorCode == 0);
 
 	return error;

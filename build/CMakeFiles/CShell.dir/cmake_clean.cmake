@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CShell.dir/src/csh_vitals.c.obj"
-  "CMakeFiles/CShell.dir/src/csh_vitals.c.obj.d"
-  "CMakeFiles/CShell.dir/src/main.c.obj"
-  "CMakeFiles/CShell.dir/src/main.c.obj.d"
-  "CShell.exe"
-  "CShell.exe.manifest"
+  "CMakeFiles/CShell.dir/src/csh_vitals.c.o"
+  "CMakeFiles/CShell.dir/src/csh_vitals.c.o.d"
+  "CMakeFiles/CShell.dir/src/main.c.o"
+  "CMakeFiles/CShell.dir/src/main.c.o.d"
+  "CShell"
   "CShell.pdb"
-  "libCShell.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

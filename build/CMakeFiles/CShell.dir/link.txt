@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\CShell.dir/objects.a
-D:\com\w64devkit\bin\ar.exe qc CMakeFiles\CShell.dir/objects.a @CMakeFiles\CShell.dir\objects1.rsp
-D:\com\w64devkit\bin\cc.exe -Wl,--whole-archive CMakeFiles\CShell.dir/objects.a -Wl,--no-whole-archive -o CShell.exe -Wl,--out-implib,libCShell.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CShell.dir\linkLibs.rsp
+/usr/sbin/cc CMakeFiles/CShell.dir/src/main.c.o CMakeFiles/CShell.dir/src/csh_vitals.c.o -o CShell

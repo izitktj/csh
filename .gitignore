@@ -4,5 +4,3 @@
 
 #Cmake
 build/*
-!build/build.bat
-!build/run.bat
