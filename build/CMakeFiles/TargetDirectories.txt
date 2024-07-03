@@ -1,3 +1,0 @@
-/mnt/c/Users/Gustavo/Documents/projs/archCsh/build/CMakeFiles/CShell.dir
-/mnt/c/Users/Gustavo/Documents/projs/archCsh/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Gustavo/Documents/projs/archCsh/build/CMakeFiles/rebuild_cache.dir

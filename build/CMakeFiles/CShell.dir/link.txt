@@ -1,1 +1,0 @@
-/usr/sbin/cc CMakeFiles/CShell.dir/src/main.c.o CMakeFiles/CShell.dir/src/csh_vitals.c.o -o CShell
